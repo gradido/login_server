@@ -1,0 +1,17 @@
+// This test should fail because the msgstr indices are not counting up correctly
+
+R"===(
+msgid ""
+msgstr "Language: Test\n"
+"Project-Id-Version: spirit-po\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit"
+
+msgid "asdf"
+msgid_plural "asdfs"
+msgstr[0] "jkls"
+msgstr[2] "jkl"
+
+
+msgid "foo"
+msgstr "baz")==="

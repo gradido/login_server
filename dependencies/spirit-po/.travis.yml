@@ -1,0 +1,167 @@
+sudo: false
+language: cpp
+compiler:
+  - clang
+addons: &gcc49
+  apt:
+    sources:
+      - ubuntu-toolchain-r-test
+      - george-edison55-precise-backports
+    packages:
+      - gettext
+      - gdb
+      - cmake-data
+      - cmake
+      - g++-4.9
+env: COMPILER=g++-4.9 BOOST_VER_NUM=48
+
+matrix:
+  include:
+    - env: COMPILER=g++-4.9 BOOST_VER_NUM=54
+      addons: *gcc49
+    - env: COMPILER=g++-4.9 BOOST_VER_NUM=57
+      addons: *gcc49
+    - env: COMPILER=g++-4.9 BOOST_VER_NUM=59
+      addons: *gcc49
+
+    - env: COMPILER=g++-5 BOOST_VER_NUM=60
+      addons: &gcc5
+        apt:
+          sources:
+            - ubuntu-toolchain-r-test
+            - george-edison55-precise-backports
+          packages:
+            - gettext
+            - gdb
+            - cmake-data
+            - cmake
+            - g++-5
+    - env: COMPILER=g++-5 BOOST_VER_NUM=61
+      addons: *gcc5
+    - env: COMPILER=g++-5 BOOST_VER_NUM=62
+      addons: *gcc5
+    - env: COMPILER=g++-5 BOOST_VER_NUM=63
+      addons: *gcc5
+    - env: COMPILER=g++-5 BOOST_VER_NUM=64
+      addons: *gcc5
+    - env: COMPILER=g++-5 BOOST_VER_NUM=65
+      addons: *gcc5
+
+    - env: COMPILER=clang++-3.5 BOOST_VER_NUM=48
+      addons: &clang35
+        apt:
+          sources:
+            - ubuntu-toolchain-r-test
+            - george-edison55-precise-backports
+            - llvm-toolchain-precise-3.5
+          packages:
+            - gettext
+            - gdb
+            - cmake-data
+            - cmake
+            - clang-3.5
+    - env: COMPILER=clang++-3.5 BOOST_VER_NUM=54
+      addons: *clang35
+    - env: COMPILER=clang++-3.5 BOOST_VER_NUM=57
+      addons: *clang35
+    - env: COMPILER=clang++-3.5 BOOST_VER_NUM=59
+      addons: *clang35
+
+    - env: COMPILER=clang++-3.7 BOOST_VER_NUM=60
+      addons: &clang37
+        apt:
+          sources:
+            - ubuntu-toolchain-r-test
+            - george-edison55-precise-backports
+            - llvm-toolchain-precise-3.7
+          packages:
+            - gettext
+            - gdb
+            - cmake-data
+            - cmake
+            - clang-3.7
+    - env: COMPILER=clang++-3.7 BOOST_VER_NUM=61
+      addons: *clang37
+    - env: COMPILER=clang++-3.7 BOOST_VER_NUM=62
+      addons: *clang37
+    - env: COMPILER=clang++-3.7 BOOST_VER_NUM=63
+      addons: *clang37
+    - env: COMPILER=clang++-3.7 BOOST_VER_NUM=64
+      addons: *clang37
+    - env: COMPILER=clang++-3.7 BOOST_VER_NUM=65
+      addons: *clang37
+
+
+
+before_install:
+# set CXX variable
+  - export CXX=${COMPILER}
+  - echo ${CXX}
+# set CXX_FLAGS variable, if boost version is recent enough then use -fno-exceptions with SPIRIT_PO_NOEXCEPT builds
+  - export CXX_FLAGS_BASE="-O3 -Wall -Werror"
+  - export CXX_FLAGS_NOEXCEPT="${CXX_FLAGS_BASE}"
+  - if [ $BOOST_VER_NUM -ge 55 ]; then export CXX_FLAGS_NOEXCEPT+=" -fno-exceptions"; fi
+
+# Make a 'deps' dir to hold installed stuff
+  - DEPS_DIR="${TRAVIS_BUILD_DIR}/deps"
+  - mkdir ${DEPS_DIR} && cd ${DEPS_DIR}
+
+install:
+# Install Boost headers
+  - BOOST_DOT_VER_STRING=1.${BOOST_VER_NUM}.0
+  - BOOST_UNDERSCORE_VER_STRING=1_${BOOST_VER_NUM}_0
+
+  - BOOST_SUBDIR_NAME=boost_${BOOST_UNDERSCORE_VER_STRING}
+  - BOOST_TAR_NAME=${BOOST_SUBDIR_NAME}.tar.gz
+
+  - BOOST_URL="http://sourceforge.net/projects/boost/files/boost/${BOOST_DOT_VER_STRING}/${BOOST_TAR_NAME}"
+  - travis_retry wget --no-check-certificate ${BOOST_URL}
+  - mkdir boost
+  - cat ${BOOST_TAR_NAME} | tar --strip-components=1 -xz -C boost
+  - ls
+
+  - cd boost
+  - ls
+  - cd tools
+  - ls
+  - cd build
+  - ls
+  - if [ $BOOST_VER_NUM -le 55 ]; then cd v2; ls; fi 
+  - ./bootstrap.sh
+  - ./b2 install --prefix=${DEPS_DIR}/b2
+
+  - BOOST_DIR_NAME=${DEPS_DIR}/boost
+  - CMAKE_OPTIONS+=" -DBOOST_ROOT=${BOOST_DIR_NAME}"
+
+  - export PATH=${DEPS_DIR}/b2/bin:${PATH}
+  - export BOOST_ROOT=${DEPS_DIR}/boost 
+
+# Make jamfile
+  - cd ${TRAVIS_BUILD_DIR}
+
+  - $CXX --version
+  - |-
+    JAM="using clang : : ${CXX} ;"
+
+  - touch project-config.jam
+  - echo "${JAM}" > project-config.jam
+
+script:
+  - $CXX --version
+
+  - echo "Unit Tests"
+  - cd test
+  - ./test.sh --toolset=clang -d+2
+
+  - echo "Libintl Validation Tests" && export CXXFLAGS=${CXX_FLAGS_BASE}
+  - cd ../test_libintl
+  - ./test.sh ${CMAKE_OPTIONS}
+
+  - echo "SPIRIT_PO_NOEXCEPT build" && export CXXFLAGS=${CXX_FLAGS_NOEXCEPT}
+  - ./test.sh -DNOEXCEPT=1 ${CMAKE_OPTIONS}
+
+  - echo "SPIRIT_PO_DEBUG build" && export CXXFLAGS=${CXX_FLAGS_BASE}
+  - ./test.sh -DDEBUG=1 ${CMAKE_OPTIONS}
+
+  - echo "SPIRIT_PO_NOEXCEPT + SPIRIT_PO_DEBUG build" && export CXXFLAGS=${CXX_FLAGS_NOEXCEPT}
+  - ./test.sh -DNOEXCEPT=1 -DDEBUG=1 ${CMAKE_OPTIONS}

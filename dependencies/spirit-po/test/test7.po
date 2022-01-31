@@ -1,0 +1,453 @@
+R"===(
+# #-#-#-#-#  he.po (nautilus.HEAD.he)  #-#-#-#-#
+# translation of nautilus.HEAD.he.po to Hebrew
+# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) 2005 THE PACKAGE'S COPYRIGHT HOLDER.
+# Gil 'Dolfin' Osher <dolfin@rpg.org.il>, 2002,2003.
+# Gil Osher <dolfin@rpg.org.il>, 2004, 2005.
+# Yaron Shahrabani <sh.yaron@gmail.com>, 2010.
+#
+# #-#-#-#-#  he.po (eel.HEAD.he)  #-#-#-#-#
+# translation of eel.HEAD.he.po to Hebrew
+# translation of eel.he.po to Hebrew
+# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
+# Gil Osher <dolfin@rpg.org.il>, 2002, 2004.
+# Gil 'Dolfin' Osher <dolfin@rpg.org.il>, 2002,2003.
+# Yuval Tanny, 2005.
+# Yosef Or Boczko <yoseforb@gnome.org>, 2013, 2014, 2015.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: eel.HEAD.he\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=nautilus&keywords=I18N+L10N&component=Internationalization (i18n)\n"
+"POT-Creation-Date: 2015-10-27 13:41+0000\n"
+"PO-Revision-Date: 2015-09-27 11:40+0300\n"
+"Last-Translator: Yosef Or Boczko <yoseforb@gmail.com>\n"
+"Language-Team: עברית <>\n"
+"Language: he\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural= (n!=1);\n"
+"X-Generator: Gtranslator 2.91.7\n"
+
+#: ../src/gtk/gtkplacesview.c:1951 ../src/gtk/gtkplacesview.c:1960
+msgid "On This Computer"
+msgstr "על מחשב זה"
+
+#: ../src/gtk/gtkplacesviewrow.c:324
+msgid "Disconnect"
+msgstr "התנתקות"
+
+#~ msgid "Location _Bar"
+#~ msgstr "סרגל _מיקום"
+
+#~ msgid "Change the visibility of this window's location bar"
+#~ msgstr "הצגה או הסתרה של סרגל המיקום של חלון זה"
+
+#~ msgid "_Zoom"
+#~ msgstr "_תקריב"
+
+#~ msgid "_View As"
+#~ msgstr "_צפייה בתור"
+
+#~ msgid "_Search"
+#~ msgstr "_חיפוש"
+
+#~ msgid "_Places"
+#~ msgstr "_מקומות"
+
+#~ msgid "Close P_arent Folders"
+#~ msgstr "סגירת תיקיות _ההורים"
+
+#~ msgid "Close this folder's parents"
+#~ msgstr "סגירת ההורים של תיקייה זו"
+
+#~ msgid "Clos_e All Folders"
+#~ msgstr "סג_ירת כל התיקיות"
+
+#~ msgid "Close all folder windows"
+#~ msgstr "סגירת כל חלונות התיקיות"
+
+#~ msgid "Locate documents and folders on this computer by name or content"
+#~ msgstr "חיפוש מסמכים ותיקיות במחשב זה על פי שם או תוכן"
+
+#~ msgid "_Browse Folder"
+#~ msgid_plural "_Browse Folders"
+#~ msgstr[0] "_דפדוף בתיקייה"
+#~ msgstr[1] "ד_פדוף בתיקיות"
+
+#~ msgid "Manage files on your computer and network locations"
+#~ msgstr "ניהול בקצים במחשב שלך ובמיקומי רשת"
+
+#~ msgid "By Path"
+#~ msgstr "לפי נתיב"
+
+#~ msgid "%s's Home"
+#~ msgstr "הבית של %s"
+
+#~ msgid "new file"
+#~ msgstr "קובץ חדש"
+
+#~ msgid "Browse the file system with the file manager"
+#~ msgstr "דפדוף במערכת הקבצים עם מנהל הקבצים"
+
+#~ msgid "File Browser"
+#~ msgstr "דפדפן הקבצים"
+
+#~ msgid "Open Folder"
+#~ msgstr "פתיחת תיקייה"
+
+#~ msgid "Home Folder"
+#~ msgstr "תיקיית הבית"
+
+#~ msgid "Create a new empty file inside this folder"
+#~ msgstr "יצירת קובץ חדש וריק בתוך תיקייה זו"
+
+#~ msgid "Format the selected volume"
+#~ msgstr "פרמוט הכרך הנבחר"
+
+#~ msgid "Format the volume associated with the open folder"
+#~ msgstr "פרמוט הכרך המשויך לתיקייה הפתוחה"
+
+#~ msgid "Format the volume associated with this folder"
+#~ msgstr "פרמוט הכרך המשויך לתיקייה זאת"
+
+#~ msgid "_Home Folder"
+#~ msgstr "תיקיית ה_בית"
+
+#~ msgid "File is not a valid .desktop file"
+#~ msgstr "הקובץ אינו קובץ ‎.desktop תקין"
+
+#~ msgid "Unrecognized desktop file Version '%s'"
+#~ msgstr "גרסת קובץ שולחן העבודה '%s' אינה מזוהה"
+
+#~ msgid "Starting %s"
+#~ msgstr "%s מופעל"
+
+#~ msgid "Application does not accept documents on command line"
+#~ msgstr "היישום אינו מקבל מסמכים משורת הפקודה"
+
+#~ msgid "Unrecognized launch option: %d"
+#~ msgstr "אפשרות שיגור לא מוכרת: %d"
+
+#~ msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
+#~ msgstr "לא ניתן להעביר כתובת מסמך לרשומת שולחן עבודה 'Type=Link'"
+
+#~ msgid "Not a launchable item"
+#~ msgstr "הפריט אינו ניתן לשיגור"
+
+#~ msgid "Disable connection to session manager"
+#~ msgstr "Disable connection to session manager"
+
+#~ msgid "Specify file containing saved configuration"
+#~ msgstr "Specify file containing saved configuration"
+
+#~ msgid "FILE"
+#~ msgstr "FILE"
+
+#~ msgid "Specify session management ID"
+#~ msgstr "Specify session management ID"
+
+#~ msgid "ID"
+#~ msgstr "ID"
+
+#~ msgid "Session management options:"
+#~ msgstr "Session management options:"
+
+#~ msgid "Show session management options"
+#~ msgstr "Show session management options"
+
+#~ msgid "Background"
+#~ msgstr "רקע"
+
+#~ msgid "Could not invoke bulk rename utility"
+#~ msgstr "לא ניתן להפעיל את כלי שינוי השם הקבוצתי"
+
+#~ msgid ""
+#~ "If set to true, then Nautilus will exit when all windows are destroyed. "
+#~ "This is the default setting. If set to false, it can be started without "
+#~ "any window, so nautilus can serve as a daemon to monitor media automount, "
+#~ "or similar tasks."
+#~ msgstr ""
+#~ "If set to true, then Nautilus will exit when all windows are destroyed. "
+#~ "This is the default setting. If set to false, it can be started without "
+#~ "any window, so nautilus can serve as a daemon to monitor media automount, "
+#~ "or similar tasks."
+
+#~ msgid "Nautilus will exit when last window destroyed."
+#~ msgstr "Nautilus will exit when last window destroyed."
+
+#~ msgid "Ask what to do"
+#~ msgstr "הצגת שאלה להמשך ביצוע"
+
+#~ msgid "Do Nothing"
+#~ msgstr "התעלמות"
+
+#~ msgid "Open with other Application..."
+#~ msgstr "פתיחה באמצעות יישום אחר..."
+
+#~ msgid "You have just inserted an Audio CD."
+#~ msgstr "תקליטור שמע הוכנס."
+
+#~ msgid "You have just inserted an Audio DVD."
+#~ msgstr "תקליטור DVD שמע הוכנס."
+
+#~ msgid "You have just inserted a Video DVD."
+#~ msgstr "תקליטור DVD וידאו הוכנס."
+
+#~ msgid "You have just inserted a Video CD."
+#~ msgstr "תקליטור וידאו הוכנס."
+
+#~ msgid "You have just inserted a Super Video CD."
+#~ msgstr "תקליטור סופר־וידאו הוכנס."
+
+#~ msgid "You have just inserted a blank CD."
+#~ msgstr "תקליטור ריק הוכנס."
+
+#~ msgid "You have just inserted a blank DVD."
+#~ msgstr "תקליטור DVD ריק הוכנס."
+
+#~ msgid "You have just inserted a blank Blu-Ray disc."
+#~ msgstr "תקליטור Blu-Ray ריק הוכנס."
+
+#~ msgid "You have just inserted a blank HD DVD."
+#~ msgstr "תקליטור HD DVD ריק הוכנס."
+
+#~ msgid "You have just inserted a Photo CD."
+#~ msgstr "תקליטור תמונות הוכנס."
+
+#~ msgid "You have just inserted a Picture CD."
+#~ msgstr "תקליטור תמונות הוכנס."
+
+#~ msgid "You have just inserted a medium with digital photos."
+#~ msgstr "מדיה עם תמונות דיגיטליות הוכנסה."
+
+#~ msgid "You have just inserted a digital audio player."
+#~ msgstr "נגן שמע דיגיטלי הוכנס."
+
+#~ msgid ""
+#~ "You have just inserted a medium with software intended to be "
+#~ "automatically started."
+#~ msgstr "מדיה המכילה תכנה שאמורה לפעול אוטומטית הוכנסה."
+
+#~ msgid "You have just inserted a medium."
+#~ msgstr "מדיה הוכנסה."
+
+#~ msgid "Choose what application to launch."
+#~ msgstr "יש לבחור איזה יישום לשגר."
+
+#~ msgid ""
+#~ "Select how to open \"%s\" and whether to perform this action in the "
+#~ "future for other media of type \"%s\"."
+#~ msgstr ""
+#~ "נא לבחור כיצד לפתוח את \"%s\" והאם לבצע פעולה זו בעתיד עבור סוגי מדיה "
+#~ "אחרים מסוג ״%s״."
+
+#~ msgid "_Always perform this action"
+#~ msgstr "_תמיד לבצע את פעולה זו"
+
+#~ msgid "Could not set application as the default: %s"
+#~ msgstr "לא ניתן להגדיר כיישום בררת המחדל: %s"
+
+#~ msgid "Default"
+#~ msgstr "בררת מחדל"
+
+#~ msgid "Icon"
+#~ msgstr "סמל"
+
+#~ msgid "No applications selected"
+#~ msgstr "לא נבחרו יישומים"
+
+#~ msgid "Could not find '%s'"
+#~ msgstr "לא ניתן למצוא את '%s'"
+
+#~ msgid "Could not find application"
+#~ msgstr "היישום לא נמצא"
+
+#~ msgid "Could not add application to the application database: %s"
+#~ msgstr "לא ניתן להוסיף את היישום למסד נתוני היישומים: %s"
+
+#~ msgid "Select an Application"
+#~ msgstr "בחירת יישום"
+
+#~ msgid "Select an application to view its description."
+#~ msgstr "נא לבחור יישום כדי לצפות בתיאורו"
+
+#~ msgid "_Use a custom command"
+#~ msgstr "יש לה_שתמש בפקודה מותאמת אישית"
+
+#~ msgid "Open %s and other %s document with:"
+#~ msgstr "פתיחת %s ומסמכים אחרים מסוג %s באמצעות:"
+
+#~ msgid "_Remember this application for %s documents"
+#~ msgstr "יש לה_שתמש קבוע ביישום זה עבור מסמכי %s"
+
+#~ msgid "Open all %s documents with:"
+#~ msgstr "פתיחת כל הקבצים מסוג %s באמצעות:"
+
+#~ msgid "Open %s and other \"%s\" files with:"
+#~ msgstr "פתיחת %s וקבצים אחרים מסוג \"%s\" באמצעות:"
+
+#~ msgid "_Remember this application for \"%s\" files"
+#~ msgstr "יש לה_שתמש קבוע ביישום זה עבור קובצי %s"
+
+#~ msgid "Open all \"%s\" files with:"
+#~ msgstr "פתיחת כל הקבצים מסוג \"%s\" באמצעות:"
+
+#~ msgid "Add Application"
+#~ msgstr "הוספת יישום"
+
+#~ msgid "Open Failed, would you like to choose another application?"
+#~ msgstr "הפתיחה נכשלה, האם ברצונך לבחור ביישום אחר?"
+
+#~ msgid ""
+#~ "\"%s\" cannot open \"%s\" because \"%s\" cannot access files at \"%s\" "
+#~ "locations."
+#~ msgstr ""
+#~ "אין באפשרות \"%s\" לפתוח את \"%s\" כיוון של־\"%s\" אין גישה לקבצים "
+#~ "במיקומים \"%s\"."
+
+#~ msgid "Open Failed, would you like to choose another action?"
+#~ msgstr "פתיחה נכשלה, האם ברצונך לבחור פעולה אחרת?"
+
+# c-format
+#~ msgid ""
+#~ "The default action cannot open \"%s\" because it cannot access files at "
+#~ "\"%s\" locations."
+#~ msgstr ""
+#~ "פעולת בררת המחדל לא יכולה לפתוח את \"%s\" כיוון שאיננה יכולה לגשת לקבצים "
+#~ "במיקומים \"%s\"."
+
+#~ msgid ""
+#~ "No other applications are available to view this file. If you copy this "
+#~ "file onto your computer, you may be able to open it."
+#~ msgstr ""
+#~ "אין יישומים אחר הזמינים להצגת קובץ זה. אם קובץ זה יועתק למחשב שלך, ייתכן "
+#~ "שיהיה באפשרותך לפתוח אותו."
+
+#~ msgid ""
+#~ "No other actions are available to view this file. If you copy this file "
+#~ "onto your computer, you may be able to open it."
+#~ msgstr ""
+#~ "אין פעולות אחרות הזמינות להצגת קובץ זה. אם קובץ זה יועתק למחשב שלך, ייתכן "
+#~ "שיהיה באפשרותך לפתוח אותו."
+
+#~ msgid ""
+#~ "If set to true, then Nautilus will automatically mount media such as user-"
+#~ "visible hard disks and removable media on start-up and media insertion."
+#~ msgstr ""
+#~ "If set to true, then Nautilus will automatically mount media such as user-"
+#~ "visible hard disks and removable media on start-up and media insertion."
+
+#~ msgid ""
+#~ "If set to true, then Nautilus will automatically open a folder when media "
+#~ "is automounted. This only applies to media where no known x-content/* "
+#~ "type was detected; for media where a known x-content type is detected, "
+#~ "the user configurable action will be taken instead."
+#~ msgstr ""
+#~ "If set to true, then Nautilus will automatically open a folder when media "
+#~ "is automounted. This only applies to media where no known x-content/* "
+#~ "type was detected; for media where a known x-content type is detected, "
+#~ "the user configurable action will be taken instead."
+
+#~ msgid ""
+#~ "If set to true, then Nautilus will never prompt nor autorun/autostart "
+#~ "programs when a medium is inserted."
+#~ msgstr ""
+#~ "If set to true, then Nautilus will never prompt nor autorun/autostart "
+#~ "programs when a medium is inserted."
+
+#~ msgid ""
+#~ "List of x-content/* types for which the user have chosen \"Do Nothing\" "
+#~ "in the preference capplet. No prompt will be shown nor will any matching "
+#~ "application be started on insertion of media matching these types."
+#~ msgstr ""
+#~ "List of x-content/* types for which the user have chosen \"Do Nothing\" "
+#~ "in the preference capplet. No prompt will be shown nor will any matching "
+#~ "application be started on insertion of media matching these types."
+
+#~ msgid ""
+#~ "List of x-content/* types for which the user have chosen \"Open Folder\" "
+#~ "in the preferences capplet. A folder window will be opened on insertion "
+#~ "of media matching these types."
+#~ msgstr ""
+#~ "List of x-content/* types for which the user have chosen \"Open Folder\" "
+#~ "in the preferences capplet. A folder window will be opened on insertion "
+#~ "of media matching these types."
+
+#~ msgid ""
+#~ "List of x-content/* types for which the user have chosen to start an "
+#~ "application in the preference capplet. The preferred application for the "
+#~ "given type will be started on insertion on media matching these types."
+#~ msgstr ""
+#~ "List of x-content/* types for which the user have chosen to start an "
+#~ "application in the preference capplet. The preferred application for the "
+#~ "given type will be started on insertion on media matching these types."
+
+#~ msgid "List of x-content/* types set to \"Do Nothing\""
+#~ msgstr "List of x-content/* types set to \"Do Nothing\""
+
+#~ msgid "List of x-content/* types set to \"Open Folder\""
+#~ msgstr "List of x-content/* types set to \"Open Folder\""
+
+#~ msgid ""
+#~ "List of x-content/* types where the preferred application will be launched"
+#~ msgstr ""
+#~ "List of x-content/* types where the preferred application will be launched"
+
+#~ msgid "Never prompt or autorun/autostart programs when media are inserted"
+#~ msgstr "Never prompt or autorun/autostart programs when media are inserted"
+
+#~ msgid "Whether to automatically mount media"
+#~ msgstr "Whether to automatically mount media"
+
+#~ msgid "Whether to automatically open a folder for automounted media"
+#~ msgstr "Whether to automatically open a folder for automounted media"
+
+#~ msgid "Change the behaviour and appearance of file manager windows"
+#~ msgstr "שינוי ההתנהגות והמראה של חלונות מנהל הקבצים"
+
+#~ msgid "File Management"
+#~ msgstr "ניהול קבצים"
+
+#~ msgid "Show Tree"
+#~ msgstr "הצגת עץ"
+
+#~ msgid "<b>Media Handling</b>"
+#~ msgstr "<b>טיפול במדיה</b>"
+
+#~ msgid "<b>Other Media</b>"
+#~ msgstr "<b>מדיה אחרת</b>"
+
+#~ msgid "B_rowse media when inserted"
+#~ msgstr "_עיון במדיה כאשר היא מוכנסת"
+
+#~ msgid "CD _Audio:"
+#~ msgstr "‏תקליטור _שמע:"
+
+#~ msgid ""
+#~ "Choose what happens when inserting media or connecting devices to the "
+#~ "system"
+#~ msgstr "יש לבחור מה יקרה כשמוכנסת מדיה או בחיבור התקנים למערכת"
+
+#~ msgid "Less common media formats can be configured here"
+#~ msgstr "סוגי מדיה פחות נפוצים ניתן להגדיר כאן"
+
+#~ msgid "Media"
+#~ msgstr "מדיה"
+
+#~ msgid "_DVD Video:"
+#~ msgstr "תקליטור _DVD וידאו:"
+
+#~ msgid "_Music Player:"
+#~ msgstr "נגן _מוזיקה:"
+
+#~ msgid "_Never prompt or start programs on media insertion"
+#~ msgstr "_אף פעם אין לפתוח או להפעיל תכנות בהכנסת מדיה"
+
+#~ msgid "_Software:"
+#~ msgstr "_תכנה:"
+)==="
